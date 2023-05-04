@@ -2,7 +2,7 @@
 name = "rubust"
 version = "0.1.0"
 edition = "2021"
-authors = ["TODO: Write your name <TODO: Write your email address>"]
+authors = ["Brian Penguin<btenggren20@gmail.com>"]
 license = "MIT"
 publish = false
 
@@ -11,3 +11,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 magnus = { version = "0.4" }
+csv = "1.2"
