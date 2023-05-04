@@ -32,3 +32,33 @@ ruby small file to hash:       18.2 i/s - 3.18x  slower
 
 ```
 
+
+Second pass, few columns mid-sized file 
+
+```
+Warming up --------------------------------------
+rust 6.4 MB file to array
+                         1.000  i/100ms
+rust 6.4 MB file to hash
+                         1.000  i/100ms
+ruby 6.4 MB file to array
+                         1.000  i/100ms
+ruby 6.4 MB file to hash
+                         1.000  i/100ms
+Calculating -------------------------------------
+rust 6.4 MB file to array
+                          0.057  (± 0.0%) i/s -      1.000  in  17.611532s
+rust 6.4 MB file to hash
+                          0.021  (± 0.0%) i/s -      1.000  in  47.859645s
+ruby 6.4 MB file to array
+                          0.021  (± 0.0%) i/s -      1.000  in  47.581674s
+ruby 6.4 MB file to hash
+                          0.009  (± 0.0%) i/s -      1.000  in 116.703598s
+
+Comparison:
+rust 6.4 MB file to array:        0.1 i/s
+ruby 6.4 MB file to array:        0.0 i/s - 2.70x  slower
+rust 6.4 MB file to hash:        0.0 i/s - 2.72x  slower
+ruby 6.4 MB file to hash:        0.0 i/s - 6.63x  slower
+
+```
